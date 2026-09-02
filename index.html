@@ -1078,6 +1078,14 @@ function openModal(type) {
 
         alert("Registration successful! Welcome to PrimeVest, " + name + ".");
     }
+} else if (type === 'login') {
+    const email = prompt("Enter your email address:");
+    if (!email) return;
+
+    const phone = prompt("Enter your phone number:");
+    if (!phone) return;
+
+    alert("Login successful! Welcome back.");
 }
 
 function toggleMenu() {
